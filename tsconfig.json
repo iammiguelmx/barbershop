@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    /* ⚙️ opciones ya existentes … */
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+
+    /* 👉 AÑADE estas dos líneas ↓↓↓ */
+    "baseUrl": ".",          //  ❱❱  punto = carpeta raíz del proyecto
+    "paths": {
+      "@/*": ["src/*"]       //   @/algo  →  src/algo
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
